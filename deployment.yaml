@@ -2,16 +2,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spring-k8s-deployment
-  namespace: development
+  namespace: ci-cd
 spec:
   selector:
     matchLabels:
-      app: spring-k8s
+      app: spring-ci-cd-k8s
   replicas: 3
   template:
     metadata:
       labels:
-        app: spring-k8s
+        app: spring-ci-cd-k8s
     spec:
       containers:
         - name: my-container

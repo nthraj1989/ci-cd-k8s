@@ -2,10 +2,10 @@ apiVersion: v1
 kind: service
 metadata:
   name: spring-k8s-service
-  namespace: development
+  namespace: ci-cd
 spec:
   selector:
-    app: spring-k8s
+    app: spring-ci-cd-k8s
   ports:
     - protocols: TCP
       port: 8181
