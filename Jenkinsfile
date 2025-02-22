@@ -34,7 +34,6 @@ pipeline{
                 bat 'kubectl apply -f k8s-manifestfiles.yaml --validate=false'
             }
        }
-
         stage("Verify deployment"){
            steps{
              bat 'kubectl get pods'
