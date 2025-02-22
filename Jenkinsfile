@@ -31,7 +31,7 @@ pipeline{
 
        stage("Deploy to k8s"){
             steps{
-                bat 'kubectl validate k8s-manifestfiles.yaml'
+                bat 'kubectl apply -f k8s-manifestfiles.yaml'
             }
        }
 
