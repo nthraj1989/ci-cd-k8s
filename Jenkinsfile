@@ -24,7 +24,6 @@ pipeline{
         stage("Build Image") {
             steps{
                 script{
-                    bat 'docker rmi niitrajnish/spring-ci-cd:1.0'
                     bat 'docker build -t niitrajnish/spring-ci-cd:1.0 .'
                 }
             }
