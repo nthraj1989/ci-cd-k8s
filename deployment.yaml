@@ -17,5 +17,5 @@ spec:
         - name: my-container
           image: niitrajnish/spring-ci-cd:1.0
           imagePullPolicy: IfNotPresent
-          port:
+          ports:
             - containerPort: 9090
