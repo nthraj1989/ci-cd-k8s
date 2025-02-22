@@ -7,7 +7,7 @@ spec:
   selector:
     app: spring-ci-cd-k8s
   ports:
-    - protocols: "TCP"
+    - protocol: "TCP"
       port: 8181
       targetPort: 9090
   type: NodePort
