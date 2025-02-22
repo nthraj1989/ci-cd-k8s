@@ -32,9 +32,9 @@ pipeline{
        stage("Deploy to k8s"){
         steps{
            script{
-            bat 'kubectl apply -f namespace.yaml'
-            bat 'kubectl apply -f deployment.yaml'
-            bat 'kubectl apply -f service.yaml'
+            bat 'kubectl apply -f namespace.yaml --validate=false'
+            bat 'kubectl apply -f deployment.yaml --validate=false'
+            bat 'kubectl apply -f service.yaml --validate=false'
            }
          }
        }
